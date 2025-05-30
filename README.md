@@ -1,4 +1,4 @@
-```markdown
+
 # Team Collaboration Guide - Please Read Before Contributing! 
 
 ## Hey Team! 👋
