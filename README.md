@@ -206,12 +206,25 @@ git commit -m "What you did"       # Save your changes
 git push origin feature/new-thing  # Share your branch
 ```
 
-## Need Help? Just Ask!
+### 📦 Core Components (Code Overview)
 
-If you're stuck, confused, or broke something:
-- Ping me on Slack/Discord/whatever we use
-- Create an issue in our repo
-- Don't struggle in silence - we're all here to help!
+We've recently added a new class-based chatbot for interacting with cryptocurrency data:
+
+#### `CryptoChatbot` Class
+
+This Python class powers our crypto-focused chatbot, **CryptoBuddy**. It provides intelligent responses to user questions about cryptocurrency trends, profitability, and sustainability. Here's a quick breakdown:
+
+- **Name:** `CryptoBuddy`
+- **Personality:** Friendly, smart, and eco-conscious 💚
+- **Data:** Built-in knowledge of coins like Bitcoin, Ethereum, and Cardano.
+- **Core Features:**
+  - Recommends the most sustainable coin
+  - Lists trending cryptocurrencies
+  - Suggests profitable investment options
+  - Tracks chat history for each session
+- **Usage:** An instance is created and run in a simple loop to interact via terminal input/output.
+
+This is part of our continuing work to make the platform more interactive and informative. Feel free to explore or expand its functionality!
 
 ## Final Thoughts
 
@@ -225,4 +238,3 @@ Remember: when in doubt, ask! I'd rather answer questions than fix broken main b
 
 ---
 *Last updated: [Date] - If you have suggestions for improving this guide, let me know!*
-```
