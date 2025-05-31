@@ -42,3 +42,23 @@ class CryptoChatbot:
                 self.crypto_db
             ))
             reply = f"The trending coins are: {', '.join(trending_coins)}"
+         # If user is asking about profitable options
+        elif "profitable" in user_query:
+            profitable_coins = list(filter(
+                lambda coin: self.crypto_db[coin]["price_trend"] == "rising"
+                and self.crypto_db[coin]["market_cap"] == "high",
+                self.crypto_db
+            ))
+            if profitable_coins:
+                reply = f"Profitable investment options: {', '.join(profitable_coins)} 💰"
+            else:
+                reply = "No coins currently meet the high-profit criteria."
+
+        # If the query doesn't match any known keywords
+        else:
+            reply = "Sorry, I couldn't understand your query. Try asking about sustainability, trends, or profitability."
+
+        # Save the exchange to the chat history
+        self.history.append({"user": user_query, "bot": reply})
+        return reply
+
