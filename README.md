@@ -1,3 +1,6 @@
+# CryptoChatbot Screenshot
+
+![CryptoChatbot Screenshot](screenshot.png)
 
 # `CryptoChatbot` Class
 
@@ -18,6 +21,7 @@ This is part of our continuing work to make the platform more interactive and in
 ## Final Thoughts
 
 Thanks for taking the time to read this! Following this workflow will help us:
+
 - Avoid conflicts and broken code
 - Keep our project history clean
 - Make code reviews easier
@@ -26,4 +30,5 @@ Thanks for taking the time to read this! Following this workflow will help us:
 Remember: when in doubt, ask! I'd rather answer questions than fix broken main branches. Let's build something awesome together! 🚀
 
 ---
-*Last updated: [Date] - If you have suggestions for improving this guide, let me know!*
+
+_Last updated: [Date] - If you have suggestions for improving this guide, let me know!_
