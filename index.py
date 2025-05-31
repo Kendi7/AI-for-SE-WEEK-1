@@ -61,4 +61,15 @@ class CryptoChatbot:
         # Save the exchange to the chat history
         self.history.append({"user": user_query, "bot": reply})
         return reply
+# Create an instance of the chatbot
+bot = CryptoChatbot()
 
+# Simple loop to get user input
+while True:
+    user_input = input("You: ")
+    if user_input.lower() in ["exit", "quit"]:
+        print("CryptoBuddy: Goodbye! 👋 Stay green and smart! 💚")
+        break
+    response = bot.response(user_input)
+    print(f"{bot.name}: {response}")
+    
